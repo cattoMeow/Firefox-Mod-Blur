@@ -1,3 +1,45 @@
+/*================== NEW TAB BG COLOR ==================*/
+@media (prefers-color-scheme: dark) {
+    @-moz-document url("about:blank"){
+         body.activity-stream { background-color: rgba(var(--dark-color), 1) !important;}
+    }
+@-moz-document url("about:newtab"), url("about:home"){
+
+ body {
+        background-image: url("bg/.jpg") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;	
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }    
+    body:not(.inline-onboarding) .fixed-search .search-wrapper{
+        background-color: var(--newtab-element-active-color) !important;
+        backdrop-filter: blur(10px) !important;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    }
+}
+}
+
+@media (prefers-color-scheme: light) {
+    @-moz-document url("about:blank"){
+         body.activity-stream { background-color: rgba(var(--light-color), 1) !important;}
+    }
+@-moz-document url("about:newtab"), url("about:home"){
+ 
+ body {
+        background-image: url("bg/.jpg") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;	
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }    
+    body:not(.inline-onboarding) .fixed-search .search-wrapper{
+        background-color: var(--newtab-element-active-color) !important;
+        backdrop-filter: blur(10px) !important;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    }
+}
+}
 
 * {  
     scrollbar-width: thin !important;
